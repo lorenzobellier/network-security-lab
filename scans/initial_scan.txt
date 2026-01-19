@@ -1,1 +1,35 @@
+# Network Discovery Scan
+# Tool: Nmap 7.95
+# Date: 2026-01-19
 
+Scan Command:
+nmap -sP 192.168.56.0/24
+
+Results:
+
+192.168.56.1
+- Status: Host is up
+- MAC Address: 0A:00:27:00:00:14
+- Vendor: Unknown
+- Description: VirtualBox Host Machine
+
+192.168.56.100
+- Status: Host is up
+- MAC Address: 08:00:27:10:A0:25
+- Vendor: PCS Systemtechnik / Oracle VirtualBox
+- Description: Attacker Machine (Kali Linux)
+
+192.168.56.101
+- Status: Host is up
+- MAC Address: 08:00:27:FD:32:54
+- Vendor: PCS Systemtechnik / Oracle VirtualBox
+- Description: Target Machine (Ubuntu Server)
+
+192.168.56.102
+- Status: Host is up
+- Description: Unknown / Additional VM or Interface
+
+Notes:
+- DNS resolution was unavailable in this lab environment.
+- Reverse DNS lookup was disabled.
+- All hosts are on a Host-Only virtual network.
