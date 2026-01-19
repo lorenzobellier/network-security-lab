@@ -1,1 +1,25 @@
+# Port and Service Scan
+# Tool: Nmap 7.95
+# Date: 2026-01-19
 
+Scan Command:
+nmap -sS -p- 192.168.56.101
+
+Target:
+- IP Address: 192.168.56.101
+- MAC Address: 08:00:27:FD:32:54
+- Vendor: PCS Systemtechnik / Oracle VirtualBox
+- Role: Target Machine (Ubuntu Server)
+
+Results:
+
+Open Ports:
+- 22/tcp → SSH (Secure Shell)
+
+Closed Ports:
+- 65534 TCP ports closed
+
+Notes:
+- Only SSH service is exposed.
+- This indicates a minimal attack surface, which is good security practice.
+- DNS resolution was unavailable in this lab environment.
